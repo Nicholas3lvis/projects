@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="/css/register.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/footer.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+	
+    <div class="container" id="container" >
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+				
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+				
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Already Have an account?</h1>
+				<p>Log in here. Your chronicle has missed you!</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+                <h1>Don't have an account?</h1>
+				<p>Sign up here. Enter your personal details and start your own chronicle!</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <footer>
+    <p>
+        Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer> -->
+
+<!-- <div class="footer-dark">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 item">
+					<h3>Services</h3>
+					<ul>
+						<li><a href="#">Web design</a></li>
+						<li><a href="#">Development</a></li>
+						<li><a href="#">Hosting</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3 item">
+					<h3>About</h3>
+					<ul>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 item text">
+					<h3>CodeChronicles</h3>
+					<p>We are your very own programming diary. Share your experience as you journey unto becoming a professional programmer.You also get
+						to meet experienced programmers!
+					</p>
+				</div>
+				<div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+			</div>
+			<p class="copyright">CodeChronicles © 2024</p>
+		</div>
+	</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> -->
+
+
+	<script>
+			const signUpButton = document.getElementById('signUp');
+			const signInButton = document.getElementById('signIn');
+			const container = document.getElementById('container');
+			
+			signUpButton.addEventListener('click', () => {
+				container.classList.add("right-panel-active");
+			});
+			
+			signInButton.addEventListener('click', () => {
+				container.classList.remove("right-panel-active");
+			});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: #f4f4f4;">
+    <div class="navbar">
+        <span class="menu-button" onclick="toggleSidebar()">☰ Menu</span>
+        <input type="text" class="search-bar" placeholder="Search for blogs">
+        <div class="logo">CodeChronicles</div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="closebtn" onclick="toggleSidebar()">&times;</a>
+        <a href="/home">Home</a>
+        <div class="dropdown">
+            <a href="#" class="admin-link" onclick="toggleDropdown()">Admin</a>
+            <div class="dropdown-content">
+                <a href="/admin">Edit Post</a>
+                <a href="/create">Create Post</a>
+            </div>
+        </div>
+        <a href="/contact">Contact Us</a>
+        <a href="/sign">Log out</a>
+
+        <div class="social-icons">
+            <i id="f" class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-x-twitter"></i>
+        </div>
+    </div>
+    <div class="contact">
+        <center><h2>TALK TO US</h2></center>
+        <form action="">
+            <label for="name">Name:</label><br>
+            <input type="text" placeholder="Enter your name here"> <br><br>
+            <label for="content">Content:</label> <br>
+            <textarea name="" id="" placeholder="Leave your message here"></textarea> <br> <br>
+            <input type="submit" value="Submit Message">
+        </form>
+    </div>
+    <center><h1>OUR LOCATION</h1></center>
+    <center><div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.04131180524!2d7.470877773612667!3d9.084073988127304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bf7a6658e1b%3A0xfca0c5d0c42c703a!2sBON%20Hotel%20Elvis!5e1!3m2!1sen!2sng!4v1722342084504!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div></center>
+
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>CodeChronicles</h3>
+                        <p>We are your very own programming diary. Share your experience as you journey unto becoming a professional programmer.You also get
+                            to meet experienced programmers!
+                        </p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">CodeChronicles © 2024</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+
+        function toggleDropdown() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

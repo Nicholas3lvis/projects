@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Generator</title>
+    <link rel="stylesheet" href="/css/generate.css">
+</head>
+<body>
+    <div class="generate">
+        <% if(locals.readA && locals.readN){%>
+            <h1 class="name2">YOUR BRAND NAME IS 👇</h1>
+            <h1 class="name">
+                <%= readA %>
+                <%= readN %>
+            </h1>
+        <%}else{%>
+            <h1 style="font-size: 30px; text-shadow: 0px 1px 2px;">Welcome to the Brand Generator😁</h1>
+            <p class="para">
+                Do not know wehat to call your brand?😞<br> lucky for you, you have come across the best brand generator 
+                made for you 😲!!<br>
+                Click the button below to get your brand name now!!.👌
+            </p>
+        <%} %>
+        <form action="/submit" method="post">
+            <input type="submit" class="button" value="Generate Brand Name">
+        </form>
+    </div>  
+</body>
+</html>
