@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API</title>
+    <link rel="stylesheet" href="/css/bootstrap.min (4).css">
+</head>
+<body>
+    <div class="card border-primary mb-3" style="width: 600px; margin-left: 25%; margin-top: 3%;">
+        <div class="card-header">
+            <center>API STRUCTURE</center>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">
+            <p>
+                <%= content %>
+            </p>
+          </h4>
+          <p class="card-text">
+
+            <form id="myForm" method="post" class="form-control">
+                <label for="idInput">ID:</label> <br>
+                <input type="text" id="idInput" name="id" class="form-control"> <br> <br>
+    
+                <label for="secretInput">Secret:</label> <br>
+                <input type="text" id="secretInput" name="secret" class="form-control"> <br> <br>
+    
+                <label for="scoreInput">Score:</label> <br> 
+                <input type="number" id="scoreInput" name="score" class="form-control"> <br> <br>
+    
+                <label for="submit">Route:</label>
+                <input type="submit" class="btn btn-warning" id="get" value="GET" formaction="/get-secret">
+                <input type="submit" class="btn btn-success" id="post" value="POST" formaction="/post-secret">
+                <input type="submit" class="btn btn-primary" id="put" value="PUT" formaction="/put-secret">
+                <input type="submit" class="btn btn-info" id="patch" value="PATCH" formaction="/patch-secret">
+                <input type="submit" class="btn btn-danger" id="delete" value="DELETE" formaction="/delete-secret">
+            </form>
+
+          </p>
+        </div>
+      </div>
+</body>
+</html>
